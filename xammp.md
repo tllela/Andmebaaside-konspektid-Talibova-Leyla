@@ -28,3 +28,16 @@ END
 ```
 <img width="942" height="531" alt="{B7D64EB5-A7F0-4B62-9987-10C6D16A36D2}" src="https://github.com/user-attachments/assets/37a3f04c-7780-4866-9c47-430505842ef8" />
 
+suur or vaike
+```
+BEGIN
+    SELECT loomNimi, kaal,
+    IF(kaal>10, 'suur loon', 'vaike loon') AS hinnang
+    FROM loomad;
+    
+END
+
+```
+<img width="329" height="267" alt="{B3BEB5D8-29AB-4892-94B2-6C20CC27BB87}" src="https://github.com/user-attachments/assets/1ab4d41a-72a5-4cc4-b1de-c3d4cde7d6bb" />
+
+
