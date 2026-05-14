@@ -21,9 +21,10 @@ end
 minmax
 ```
 BEGIN
-    SELECT MIN(kaal),MAX(kaal)
-    INTO minKaal, maxKaal
+    SELECT MIN(kaal),MAX(kaal), AVG(kaal), SUM(kaal), COUNT(*)
+    INTO minKaal, maxKaal, avgKaal, sumKaal, countiLoom
     FROM loomad;
 END
 ```
-<img width="652" height="627" alt="{4BD903FA-2392-4AD0-84B8-9F765154332F}" src="https://github.com/user-attachments/assets/f1fcbb7b-0115-43a6-bddb-808e528d6513" />
+<img width="942" height="531" alt="{B7D64EB5-A7F0-4B62-9987-10C6D16A36D2}" src="https://github.com/user-attachments/assets/37a3f04c-7780-4866-9c47-430505842ef8" />
+
