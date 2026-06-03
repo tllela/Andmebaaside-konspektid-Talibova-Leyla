@@ -96,8 +96,29 @@ select * from logi;
 ```
 <img width="650" height="376" alt="{00966FC4-635A-4536-ADDE-A01AF704107E}" src="https://github.com/user-attachments/assets/bb34c982-8fc5-4b92-af68-89bfc850f5ac" />
 
+```
+--Update triger
+CREATE TRIGGER linnaUuendamine
+ON linnad --tabelinimi, mis on vaja jälgida
+FOR UPDATE
+AS
+INSERT INTO logi(kasutaja, aeg, toiming, andmed)
+SELECT
+SYSTEM_USER, --kasutaja
+GETDATE(),  --aeg
+'on tehtud UPDATE käsk',  --toiming
+CONCAT(' VANAD: linn: ', deleted.linnanimi, ' rahvaarv: ', deleted.rahvaarv,
+' ||| UUES: linn: ', inserted.linnanimi, ' rahvaarv: ', inserted.rahvaarv)  --andmed
+FROM deleted INNER JOIN inserted
+ON deleted.linnID=inserted.linnID;
 
 
+--kontrollimiseks tuleb uuendada tabeli linn
+UPDATE linnad SET linnanimi='Parnu-vaike', rahvaarv=50 WHERE linnID=2; 
+select * from linnad;
+select * from logi;
+```
+<img width="811" height="380" alt="{E5DDAE05-0499-4C6A-8FC3-B3828313689E}" src="https://github.com/user-attachments/assets/334a2f4c-79b7-4bd6-b2fc-554449a22877" />
 
 
 
