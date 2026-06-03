@@ -1,4 +1,7 @@
-# Andmebaasid
+# Andmebaaside konspektid Talibova Leyla 
+
+[Põhimõsted](README.md) | [Protseduurid](protseduur.md)
+
 # Andmebaasid
 andmebaasidega seotud SQL kood ja konspektid
 ##sisukord
