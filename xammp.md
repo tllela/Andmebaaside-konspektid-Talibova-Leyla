@@ -1,4 +1,7 @@
 #xammp
+
+[Põhimõsted](README.md) | [Protseduurid](protseduur.md) | [keys](keys.md) | [xammp](xammp.md) | [kysimused](kysimused.md) | [hotelruum](hotelliruum.md) | [Triger](Triger.md) 
+
 kusutatud 
 ```
 BEGIN 
