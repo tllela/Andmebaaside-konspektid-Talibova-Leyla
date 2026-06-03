@@ -73,3 +73,33 @@ select * from linnad;
 select * from logi;
 ```
 <img width="603" height="378" alt="{AEDC51FA-4E47-4639-A0DA-43F87689B135}" src="https://github.com/user-attachments/assets/8a414bce-e5c7-4996-8677-ba406ade3f40" />
+
+```
+
+CREATE TRIGGER linnaKustutamine
+ON linnad --tabelinimi, mis on vaja jälgida
+FOR DELETE
+AS
+INSERT INTO logi(kasutaja, aeg, toiming, andmed)
+SELECT
+SYSTEM_USER, --kasutaja
+GETDATE(),  --aeg
+'on tehtud DELETE käsk',  --toiming
+CONCAT(' linn: ', deleted.linnanimi, ' rahvaarv: ', deleted.rahvaarv)  --andmed
+FROM deleted;
+
+
+--kontrol--kustutada tabelist linnad
+DELETE FROM linnad WHERE linnID=1;
+select * from linnad;
+select * from logi;
+```
+<img width="650" height="376" alt="{00966FC4-635A-4536-ADDE-A01AF704107E}" src="https://github.com/user-attachments/assets/bb34c982-8fc5-4b92-af68-89bfc850f5ac" />
+
+
+
+
+
+
+
+
