@@ -120,6 +120,41 @@ select * from logi;
 ```
 <img width="811" height="380" alt="{E5DDAE05-0499-4C6A-8FC3-B3828313689E}" src="https://github.com/user-attachments/assets/334a2f4c-79b7-4bd6-b2fc-554449a22877" />
 
+```
+--kombineerime insert ja delete triger
+CREATE TRIGGER linnaKustutaLisa
+ON linnad --tabelinimi, mis on vaja jälgida
+FOR DELETE, INSERT 
+AS
+BEGIN
+ INSERT INTO logi(kasutaja, aeg, toiming, andmed)
+ SELECT
+ SYSTEM_USER, --kasutaja
+ GETDATE(),  --aeg
+ 'on tehtud DELETE käsk',  --toiming
+ CONCAT(' linn: ', deleted.linnanimi, ' rahvaarv: ', deleted.rahvaarv)  --andmed
+ FROM deleted
+
+ UNION ALL
+
+ SELECT
+ SYSTEM_USER, --kasutaja
+ GETDATE(),  --aeg
+ 'on tehtud INSERT käsk',  --toiming
+ CONCAT(' linn: ', inserted.linnanimi, ' rahvaarv: ', inserted.rahvaarv)  --andmed
+ FROM inserted;
+END;
+
+--kontrollimiseks insert into linnad
+INSERT INTO linnad(linnanimi, rahvaarv)
+VALUES ('Tallinn', 650000);
+
+DELETE FROM linnad WHERE linnID=2;
+
+select * from linnad;
+select * from logi;
+```
+<img width="682" height="361" alt="{5F4F4C95-F4E7-4455-893D-A96187A7FA71}" src="https://github.com/user-attachments/assets/e2bfb022-ad67-471b-9bf2-e8ec261202cb" />
 
 
 
