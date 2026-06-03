@@ -1,5 +1,7 @@
 „Andmebaasi võtmed (Keys)“
 
+[Põhimõsted](README.md) | [Protseduurid](protseduur.md) | [keys](keys.md) | [xammp](xammp.md) | [kysimused](kysimused.md) | [hotelruum](hotelliruum.md) | [Triger](Triger.md) 
+
 Primary key
 Definitsioon:
 A primary key is a column or columns in a database table with values that uniquely identify each row or record. For example, an employee ID column could be a primary key in a table of employee information.
