@@ -31,3 +31,44 @@ Simple Key Management for Internet Protocols (SKIP) is similar to SSL, except th
 https://en.wikipedia.org/wiki/Simple_Key-Management_for_Internet_Protocol
 <img width="330" height="96" alt="{96E386A0-2F99-48C2-8931-8E8D458BB69D}" src="https://github.com/user-attachments/assets/9ef1773e-fce4-40c2-9cb0-a0cf680efd1f" />
 <img width="289" height="129" alt="{52A24DB6-79A3-4D64-864D-965C475D58DF}" src="https://github.com/user-attachments/assets/25f80e57-0841-4bb3-8d26-633edeb4b4c2" />
+
+Composite Key
+Definitsioon:
+See toimib primaarvõtmena, kui tabelis puudub primaarvõti.
+Kahe või enama atribuudi abil moodustatakse liitvõti.
+Erinevad atribuudi kombinatsioonid võivad tagada erineva täpsuse ridade unikaalse tuvastamise osas.
+https://en.wikipedia.org/wiki/Composite_key
+<img width="375" height="114" alt="{14384EE9-F5D0-49CD-8A83-BD1CA11387DB}" src="https://github.com/user-attachments/assets/3278d9ae-2c6a-4060-8ca9-69a55ac6f67b" />
+ <img width="237" height="129" alt="{BE8C1AC9-30CC-4A19-8A5A-E7C1C623E9C2}" src="https://github.com/user-attachments/assets/c3620ca5-a77d-4a85-9bfb-0c2df283517d" />
+
+Compound Key
+Definitsioon:
+A Composite Key is a type of candidate key that consists of two or more attributes or columns in a table. These attributes together uniquely identify each record in the table. It is widely used in database management systems to enhance data retrieval speed and ensure data integrity.
+https://www.dremio.com/wiki/composite-key/
+<img width="400" height="115" alt="{EB40581F-9679-46FD-AAD8-1EB11EC84F4A}" src="https://github.com/user-attachments/assets/5d422e62-2655-4608-9955-93d78135e3e6" />
+<img width="221" height="132" alt="{1165F3D4-D533-4565-82D6-854BCC783AB5}" src="https://github.com/user-attachments/assets/d7b97bac-6483-4f91-aea9-4f44db992f40" />
+
+ Superkey
+ Definitsioon:
+ Relatsioonandmemudeli supervõti on seose atribuutide alamhulk, mis vastab ainulaadsuse nõudele: antud seoses ei ole kahte tuuplet, milles selle atribuutide alamhulga väärtused langevad kokku (on võrdsed).
+ https://ru.wikipedia.org/wiki/%D0%A1%D1%83%D0%BF%D0%B5%D1%80%D0%BA%D0%BB%D1%8E%D1%87
+ <img width="281" height="114" alt="{92523BBF-1384-4036-B7BC-2095B45ADB76}" src="https://github.com/user-attachments/assets/8bc1e19e-eaf4-48e6-83ed-d9f55c896006" />
+<img width="353" height="130" alt="{E0E1668B-8215-4A7D-8DF3-E40469ED7225}" src="https://github.com/user-attachments/assets/1dee2bd3-0e65-4e5b-8f2b-b57222c1035c" />
+
+ Candidate Key
+ Definitsioon:
+ Candidate key on minimaalne supervõti, mis tähendab, et see suudab üheselt tuvastada kirje, kuid ei sisalda liigseid atribuute.
+See on supervõti ilma korduvate andmeteta, mida nimetatakse potentsiaalvõtiks.
+https://en.wikipedia.org/wiki/Candidate_key
+<img width="338" height="116" alt="{5E29B67C-EF61-493C-8E6A-CC12813037CC}" src="https://github.com/user-attachments/assets/6b122c80-ead1-4ece-9247-f1d46cc685eb" />
+<img width="241" height="124" alt="{D5704EE5-3152-4227-A47A-DA232B7CB7BC}" src="https://github.com/user-attachments/assets/c4484604-6a09-4664-83d3-52a1a46e5271" />
+
+Alternate Key
+Definitsioon:
+Alternate key on mis tahes potentsiaalvõti tabelis, mida ei ole valitud primaarvõtmeks. Teisisõnu, kõik võtmed, mida ei ole määratud primaarvõtmeks, loetakse alternatiivvõtmeteks.
+Alternate key nimetatakse ka teisesevõtmeks, kuna see suudab üheselt tuvastada kirjeid tabelis samamoodi nagu primaarvõti.
+Alternate key võib koosneda ühest või mitmest veerust (väljast), mis võimaldavad kirjet üheselt tuvastada, kuid see ei ole primaarvõti.
+https://en.wikipedia.org/wiki/Alt_key
+
+<img width="310" height="82" alt="{97821C7C-7DB2-442F-B40E-D3541867CA33}" src="https://github.com/user-attachments/assets/19cedee6-ac39-431e-a345-ad10178b9cee" />
+<img width="209" height="105" alt="{7B5DB210-1A0A-4061-9172-C943FAB16BC1}" src="https://github.com/user-attachments/assets/aff0d290-6c6e-4462-9592-4f10db4dda78" />
