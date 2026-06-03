@@ -1,4 +1,7 @@
 ## Andnebass Hotelliruumi reserveerimine
+
+[Põhimõsted](README.md) | [Protseduurid](protseduur.md) | [keys](keys.md) | [xammp](xammp.md) | [kysimused](kysimused.md) | [hotelruum](hotelliruum.md) | [Triger](Triger.md) 
+
 ```
 CREATE TABLE guest(
     guestID int PRIMARY KEY IDENTITY(1,1),
