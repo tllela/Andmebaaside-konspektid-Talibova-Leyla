@@ -167,4 +167,11 @@ DENY ALTER ANY DATABASE DDL TRIGGER TO sekretarLeyla;
 ```
 <img width="578" height="561" alt="{EEFA5BFA-D5F0-4460-B08B-D1532DE4570B}" src="https://github.com/user-attachments/assets/445af4b6-4c9f-4d70-ac8f-f1159e51fe0a" />
 
+TRIGGERS IN XAMMP 
+
+<img width="641" height="707" alt="{311D9950-D474-47B6-AC56-CEE825F0EDC7}" src="https://github.com/user-attachments/assets/bc6de9d0-cbfb-4ee2-9590-85e14edb5061" />
+
+<img width="687" height="777" alt="{0FAA3859-AC8E-49EB-B56F-82E68A882F00}" src="https://github.com/user-attachments/assets/59d90cd6-b5f8-4c08-a547-7bf132dbebea" />
+
+<img width="647" height="696" alt="{2EE25C72-AA18-4104-9F23-73D63B5E30D7}" src="https://github.com/user-attachments/assets/3d9225fc-db9b-4590-8d99-ac8206cc2f03" />
 
