@@ -2,6 +2,7 @@
 
 [Põhimõsted](README.md) | [Protseduurid](protseduur.md) | [keys](keys.md) | [xammp](xammp.md) | [kysimused](kysimused.md) | [hotelruum](hotelliruum.md) | [Triger](Triger.md) 
 
+
 # Andmebaasid
 andmebaasidega seotud SQL kood ja konspektid
 ##sisukord
