@@ -49,3 +49,27 @@ select * from linnad;
 select * from logi;
 ```
 <img width="601" height="313" alt="{636A5DFF-D208-4140-800E-721EA65E6522}" src="https://github.com/user-attachments/assets/02a68b89-ad94-4855-bf20-f2c468b388a8" />
+
+```
+--trigeri muutmine
+ALTER TRIGGER linnaLisamine
+ON linnad --tabelinimi, mis on vaja jälgida
+FOR INSERT
+AS
+INSERT INTO logi(kasutaja, aeg, toiming, andmed)
+SELECT
+SYSTEM_USER, --kasutaja
+GETDATE(),  --aeg
+'on tehtud INSERT käsk',  --toiming
+CONCAT(' linn: ', inserted.linnanimi, ' rahvaarv: ', inserted.rahvaarv)  --andmed
+FROM inserted;
+
+
+--kontrollimiseks insert into linnad
+INSERT INTO linnad(linnanimi, rahvaarv)
+VALUES ('Narva', 50000);
+
+select * from linnad;
+select * from logi;
+```
+<img width="603" height="378" alt="{AEDC51FA-4E47-4639-A0DA-43F87689B135}" src="https://github.com/user-attachments/assets/8a414bce-e5c7-4996-8677-ba406ade3f40" />
