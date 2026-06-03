@@ -156,6 +156,15 @@ select * from logi;
 ```
 <img width="682" height="361" alt="{5F4F4C95-F4E7-4455-893D-A96187A7FA71}" src="https://github.com/user-attachments/assets/e2bfb022-ad67-471b-9bf2-e8ec261202cb" />
 
+```
+--kasutaja sekretarLeyla oigused - lisamine, kastutamine ja uuendamine tabelis linnad,
+--ei nae tabeli logi ja ei saa muuta trigerid
 
+GRANT SELECT, INSERT, UPDATE, DELETE ON linnad TO sekretarLeyla;
+DENY SELECT ON logi TO sekretarLeyla;
+
+DENY ALTER ANY DATABASE DDL TRIGGER TO sekretarLeyla;
+```
+<img width="578" height="561" alt="{EEFA5BFA-D5F0-4460-B08B-D1532DE4570B}" src="https://github.com/user-attachments/assets/445af4b6-4c9f-4d70-ac8f-f1159e51fe0a" />
 
 
